@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="assets/1favicon.jpg" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suhana Adhikari | Frontend Developer & Web Designter</title>
@@ -21,6 +22,7 @@
     <meta name="twitter:image" content="https://your-portfolio-url.com/assets/og-image.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/1favicon.jpg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -33,10 +35,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
+    <div class="animated-bg-icons">
+        <i class="fab fa-html5" style="left:5%; animation-delay:0s;"></i>
+        <i class="fab fa-css3-alt" style="left:20%; animation-delay:2s;"></i>
+        <i class="fab fa-js" style="left:35%; animation-delay:4s;"></i>
+        <i class="fab fa-react" style="left:50%; animation-delay:1s;"></i>
+        <i class="fab fa-bootstrap" style="left:65%; animation-delay:3s;"></i>
+        <i class="fab fa-git-alt" style="left:80%; animation-delay:5s;"></i>
+        <i class="fab fa-figma" style="left:90%; animation-delay:6s;"></i>
+    </div>
     <!-- Header Section -->
     <header>
         <nav class="navbar enhanced-navbar">
             <div class="logo">
+                <img src="assets/1favicon.jpg" alt="Site Icon" class="site-favicon" style="width:28px;height:28px;margin-right:8px;vertical-align:middle;" />
                 <img src="assets/logo.png" alt="Logo" class="logo-img animated-logo" />
                 <span class="highlight">Suhana</span> Adhikari
             </div>
@@ -45,24 +57,52 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
+            <button id="darkModeToggle" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero enhanced-hero">
+        <div class="hero-bg-animated">
+            <!-- 20 animated stars for dynamic effect -->
+            <span class="star" style="--i:1;"></span>
+            <span class="star" style="--i:2;"></span>
+            <span class="star" style="--i:3;"></span>
+            <span class="star" style="--i:4;"></span>
+            <span class="star" style="--i:5;"></span>
+            <span class="star" style="--i:6;"></span>
+            <span class="star" style="--i:7;"></span>
+            <span class="star" style="--i:8;"></span>
+            <span class="star" style="--i:9;"></span>
+            <span class="star" style="--i:10;"></span>
+            <span class="star" style="--i:11;"></span>
+            <span class="star" style="--i:12;"></span>
+            <span class="star" style="--i:13;"></span>
+            <span class="star" style="--i:14;"></span>
+            <span class="star" style="--i:15;"></span>
+            <span class="star" style="--i:16;"></span>
+            <span class="star" style="--i:17;"></span>
+            <span class="star" style="--i:18;"></span>
+            <span class="star" style="--i:19;"></span>
+            <span class="star" style="--i:20;"></span>
+        </div>
         <div class="hero-content">
             <h1>Hi, I'm <span class="highlight">Suhana Adhikari</span></h1>
-            <p class="hero-subtitle">Frontend Developer & Web Designer</p>
-            <a href="#projects" class="cta-button">View My Work</a>
-            <a href="#contact" class="cta-button secondary">Contact Me</a>
+            <p class="hero-subtitle"><span id="typed-text"></span></p>
+            <a href="#projects" class="cta-button">View Work</a>
+            <a href="#contact" class="cta-button secondary">Contact</a>
         </div>
         <div class="hero-image">
-            <img src="assets/profile.png" alt="Suhana Adhikari" />
+            <div class="hero-img-frame">
+                <img src="assets/1750862801208.jpg" class="profile-img" />
+            </div>
         </div>
     </section>
 
@@ -71,8 +111,42 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Hello! I'm a passionate web developer with experience in creating beautiful and functional websites. I love turning ideas into reality through code.</p>
-                <p>I specialize in front-end development and enjoy working with modern technologies to build responsive and user-friendly applications.</p>
+                <p>Hello! I'm <b>Suhana Adhikari</b>, a beginner web developer from Pokhara, Nepal. I am passionate about learning new technologies and building beautiful, functional websites. My journey started with curiosity about how websites work, and now I am focused on improving my HTML, CSS, and JavaScript skills every day.</p>
+                <p>I recently completed my Higher Secondary Education and am eager to take on new challenges, collaborate with others, and grow as a developer. I enjoy coding, drawing, and exploring creative ideas. My goal is to become a skilled frontend developer and contribute to exciting projects.</p>
+                <div class="education-section">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Higher Secondary Education (NEB)</h4>
+                        <p><i class="fas fa-university"></i> Shree Shitaladevi Community Secondary School</p>
+                        <p><i class="fas fa-calendar-alt"></i> 2023-2024</p>
+                        <p><i class="fas fa-star"></i> Waiting for result</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Secondary Education (SEE)</h4>
+                        <p><i class="fas fa-university"></i> Shree Kalika Secondary School</p>
+                        <p><i class="fas fa-calendar-alt"></i> 2009-2022</p>
+                        <p><i class="fas fa-star"></i> CGPA: 3.60</p>
+                    </div>
+                </div>
+                <div class="personal-info">
+                    <h3>Personal Details</h3>
+                    <ul>
+                        <li><i class="fas fa-user"></i> Name: Suhana Adhikari</li>
+                        <li><i class="fas fa-birthday-cake"></i> Date of Birth: 6th February, 2007</li>
+                        <li><i class="fas fa-venus"></i> Gender: Female</li>
+                        <li><i class="fas fa-id-card"></i> Nationality: Nepali</li>
+                        <li><i class="fas fa-user-graduate"></i> Marital Status: Single</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Address: Pokhara, Nepal</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:suhanaadhikari656@gmail.com">suhanaadhikari656@gmail.com</a></li>
+                        <li><i class="fas fa-phone"></i> +977-9846007859</li>
+                        <li><i class="fas fa-language"></i> Languages: Nepali, English</li>
+                        <li><i class="fas fa-globe"></i> <a href="https://your-portfolio-url.com/" target="_blank">Portfolio Website</a></li>
+                        <li><i class="fas fa-code-branch"></i> Beginner, open to learning and new opportunities</li>
+                        <li><i class="fas fa-heart"></i> Hobbies: Coding, Drawing, Traveling, Reading</li>
+                        <li><i class="fas fa-bolt"></i> Strengths: Curiosity, Creativity, Willingness to learn</li>
+                        <li><i class="fas fa-tasks"></i> Interests: Frontend Development, UI/UX Design, Animation</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -84,30 +158,17 @@
             <div class="skill-card">
                 <i class="fab fa-html5"></i>
                 <h3>HTML5</h3>
+                <div class="progress-bar"><div class="progress" data-progress="95"></div></div>
             </div>
             <div class="skill-card">
                 <i class="fab fa-css3-alt"></i>
                 <h3>CSS3</h3>
+                <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
             </div>
             <div class="skill-card">
                 <i class="fab fa-js"></i>
                 <h3>JavaScript</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-react"></i>
-                <h3>React</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-bootstrap"></i>
-                <h3>Bootstrap</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-git-alt"></i>
-                <h3>Git</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-figma"></i>
-                <h3>Figma</h3>
+                <div class="progress-bar"><div class="progress" data-progress="85"></div></div>
             </div>
         </div>
     </section>
@@ -115,24 +176,135 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <h2>My Projects</h2>
-        <div class="project-grid">
+        <div class="project-grid redesigned-projects">
             <div class="project-card">
-                <img src="https://via.placeholder.com/600x400?text=Portfolio+Website" alt="Personal Portfolio Website">
-                <h3>Personal Portfolio Website</h3>
-                <p>A modern, responsive portfolio website to showcase my skills, projects, and contact information. Built with HTML, CSS, and JavaScript.</p>
-                <a href="#" class="project-link">View Live</a>
+                <div class="project-img-gallery">
+                    <img src="port.jpg" alt=">WEb page designing and web development">
+                </div>
+                <div class="project-info">
+                    <h3>WEb page designing and web development</h3>
+                    <p>A project carried out in order to instill some basic skills of web page designing and development among specific people</p>
+                    <a href="#" class="project-link">View Live</a>
+                </div>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/600x400?text=Recipe+Finder+App" alt="Recipe Finder App">
-                <h3>Recipe Finder App</h3>
-                <p>A web application that allows users to search for recipes by ingredients. Features a clean UI and integrates with a public recipe API.</p>
-                <a href="#" class="project-link">View Live</a>
+                <div class="project-img-gallery">
+                    <img src="assets/skill.jpg" alt="Basic computer skills">
+                </div>
+                <div class="project-info">
+                    <h3>Basic computer skills</h3>
+                    <p>A project carried out to inculcate some basic computer skills like english and nepali typing skills among the people.</p>
+                    <a href="#" class="project-link">View Live</a>
+                </div>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/600x400?text=Task+Manager" alt="Task Manager">
-                <h3>Task Manager</h3>
-                <p>A simple and intuitive task management tool to organize daily activities. Includes add, edit, and delete functionality with local storage support.</p>
-                <a href="#" class="project-link">View Live</a>
+                <div class="project-img-gallery">
+                    <img src="survey.jpg" alt="various surveys">
+                </div>
+                <div class="project-info">
+                    <h3>Various surveys</h3>
+                    <p>A project aimed at conducting various surveys to gather information and insights on different topics related with computer.</p>
+                    <a href="#" class="project-link">View Live</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Articles Section -->
+    <section id="blog" class="blog animated-section">
+        <h2>Blog & Articles</h2>
+        <div class="blog-list">
+            <div class="blog-card">
+                <h3>How I Built My Portfolio Website</h3>
+                <p class="blog-date">June 2025</p>
+                <p class="blog-excerpt">A behind-the-scenes look at the design, code, and tools I used to create this site, plus tips for your own portfolio.</p>
+                <a href="#" class="blog-link">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h3>Top 5 CSS Tricks for Modern Web Design</h3>
+                <p class="blog-date">May 2025</p>
+                <p class="blog-excerpt">Discover my favorite CSS techniques for beautiful, responsive, and interactive websites.</p>
+                <a href="#" class="blog-link">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h3>Getting Started with JavaScript Animations</h3>
+                <p class="blog-date">April 2025</p>
+                <p class="blog-excerpt">Learn how to add smooth, eye-catching animations to your projects with just a few lines of code.</p>
+                <a href="#" class="blog-link">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Custom, responsive websites using modern technologies for businesses, portfolios, and personal brands.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Beautiful, user-friendly interfaces and experiences tailored to your audience and goals.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile-Friendly Design</h3>
+                <p>Mobile-first, adaptive layouts that look great on any device, ensuring accessibility and usability.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-search"></i>
+                <h3>SEO Optimization</h3>
+                <p>On-page SEO best practices to help your site rank higher and reach more people.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Performance Tuning</h3>
+                <p>Fast-loading, optimized websites for the best user experience and search engine ranking.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-headset"></i>
+                <h3>Support & Maintenance</h3>
+                <p>Ongoing support, updates, and troubleshooting to keep your site running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>Client Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="person2.jpg" alt="Reviewer 1" class="reviewer-img">
+                    <div>
+                        <h4>Ramesh K.</h4>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                </div>
+                <p class="review-text">“Suhana delivered a beautiful, fast website for my business. Communication was excellent and the process was smooth!”</p>
+            </div>
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="person1.jpg" alt="Reviewer 2" class="reviewer-img">
+                    <div>
+                        <h4>Priya S.</h4>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                </div>
+                <p class="review-text">“Creative, professional, and always on time. Highly recommend for any web or design project!”</p>
+            </div>
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <img src="person3.jpg" alt="Reviewer 3" class="reviewer-img">
+                    <div>
+                        <h4>Deepak A.</h4>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                </div>
+                <p class="review-text">“Great attention to detail and a real passion for quality. My site looks amazing and works perfectly on all devices.”</p>
             </div>
         </div>
     </section>
@@ -151,17 +323,30 @@
     </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="simple-footer" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; width: 100%; padding: 1.2rem 2vw; background: linear-gradient(90deg, #232946 0%, #4062bb 100%); color: #fff; border-radius: 18px 18px 0 0; box-shadow: 0 -2px 16px 0 rgba(64,98,187,0.10); min-height: 70px;">
+            <div class="simple-footer-brand" style="display: flex; align-items: center; gap: 0.7rem;">
+                <img src="assets/logo.png" alt="Logo" class="simple-footer-logo" style="width: 34px; height: 34px; border-radius: 50%; background: #fff; border: 2px solid #ffd700; object-fit: cover; box-shadow: 0 2px 8px #ffd70033;" />
+                <span class="simple-footer-title" style="font-size: 1.1rem; font-weight: 700; color: #ffd700;">Suhana Adhikari</span>
             </div>
-            <p>&copy; 2025 Suhana Adhikari. All rights reserved.</p>
+            <div class="simple-footer-links" style="display: flex; gap: 1.2rem; align-items: center;">
+                <a href="#home" style="color: #fff; text-decoration: none; font-weight: 500;">Home</a>
+                <a href="#about" style="color: #fff; text-decoration: none; font-weight: 500;">About</a>
+                <a href="#skills" style="color: #fff; text-decoration: none; font-weight: 500;">Skills</a>
+                <a href="#projects" style="color: #fff; text-decoration: none; font-weight: 500;">Projects</a>
+                <a href="#contact" style="color: #fff; text-decoration: none; font-weight: 500;">Contact</a>
+            </div>
+            <div class="simple-footer-social" style="display: flex; gap: 1.1rem; align-items: center;">
+                <a href="#" style="color: #ffd700; font-size: 1.2rem;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: #ffd700; font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: #ffd700; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="simple-footer-bottom" style="font-size: 0.98rem; color: #fff; display: flex; align-items: center; gap: 0.7rem;">
+                &copy; 2025 Suhana Adhikari
+                <a href="#home" class="footer-top-link" style="color: #ffd700; font-size: 1.1rem;"><i class="fas fa-arrow-up"></i></a>
+            </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
     <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
 </body>
 </html>
