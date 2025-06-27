@@ -78,6 +78,10 @@ scrollToTopBtn.addEventListener('click', () => {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, Opera
 });
 
+document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 // Dark Mode Toggle
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
